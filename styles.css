@@ -1,4 +1,5 @@
 body {
+  min-width: 800px;
   background: #c3b38b;
   color: #333333;
   display: flex;
