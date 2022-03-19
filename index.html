@@ -16,32 +16,32 @@
     <div id="gallery">
         <ul>
             <li>
-                <a href="/gallery14/pic1.jpg" title="Black Heart">
+                <a href="#" title="Black Heart">
                     <img src="/gallery14/pic1thumb.jpg" width="100" height="175" alt="Black Heart">
                 </a>
             </li>
             <li>
-                <a href="/gallery14/pic2.jpg" title="Square Room">
+                <a href="#" title="Square Room">
                     <img src="/gallery14/pic2thumb.jpg" width="100" height="175" alt="Square Room">
                 </a>
             </li>
             <li>
-                <a href="/gallery14/pic3.jpg" title="Silence Library">
+                <a href="#" title="Silence Library">
                     <img src="/gallery14/pic3thumb.jpg" width="100" height="175" alt="Silence Library">
                 </a>
             </li>
             <li>
-                <a href="/gallery14/pic4.jpg" title="Drink Service">
+                <a href="#" title="Drink Service">
                     <img src="/gallery14/pic4thumb.jpg" width="100" height="175" alt="Drink Service">
                 </a>
             </li>
             <li>
-                <a href="/gallery14/pic5.jpg" title="Tunnel Train">
+                <a href="#" title="Tunnel Train">
                     <img src="/gallery14/pic5thumb.jpg" width="100" height="175" alt="Tunnel Train">
                 </a>
             </li>
             <li>
-                <a href="/gallery14/pic6.jpg" title="Louge">
+                <a href="#" title="Louge">
                     <img src="/gallery14/pic6thumb.jpg" width="100" height="175" alt="Louge">
                 </a>
             </li>
@@ -56,9 +56,9 @@
 </body>
 <script>
     $(document).ready(function () {
-        $('#gallery a').click(function () {
-            var galHref = $(this).attr('href');
-            var galAlt = $(this).attr('title');
+        $('#gallery img').click(function () {
+            var galHref = $(this).attr('src');
+            var galAlt = $(this).attr('alt');
             $('figure').css('display', 'none');
             $('figure img').attr({ src: galHref, alt: galAlt });
             $('figcaption').html(galAlt);
